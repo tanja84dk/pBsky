@@ -34,6 +34,6 @@ def dump(d):
 # CLEAN
 # Simple function to change complex text to simple text.
 def clean(t):
-    re.sub("[\W_]+", " ", t)  # strip everyting but letters and characters
+    re.sub("[\W_]+", " ", t)  # strip everything but letters and characters
     t = "".join(t.split("\n"))  # strip out all the specific \n
     return t.strip()

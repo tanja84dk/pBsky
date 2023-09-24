@@ -55,7 +55,7 @@ class DC:
 def main():
     # Parse the passed arguments
     parser = argparse.ArgumentParser(
-        prog="pBsky", description="Comand line BlueSky client for Linux."
+        prog="pBsky", description="Command line BlueSky client for Linux."
     )
     parser.add_argument(
         "-p", "--post", type=str, help="create a post from the given string."
