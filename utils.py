@@ -1,4 +1,6 @@
-# Author: David Carryer 
+#!/usr/bin/env python3
+
+# Author: David Carryer
 # Email: david@davidcarryer.com
 # Bluesky: @davidcarryer.com
 #
@@ -24,13 +26,14 @@ def dump_json(j):
 def dump(d):
     print("\n")
     print("=========================================================")
-    print(d)  
+    print(d)
     print("=========================================================")
     print("\n")
+
 
 # CLEAN
 # Simple function to change complex text to simple text.
 def clean(t):
-    re.sub('[\W_]+',' ',t) # strip everyting but letters and characters
-    t = ''.join(t.split('\n')) # strip out all the specific \n
+    re.sub("[\W_]+", " ", t)  # strip everyting but letters and characters
+    t = "".join(t.split("\n"))  # strip out all the specific \n
     return t.strip()
