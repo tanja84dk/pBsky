@@ -1,4 +1,5 @@
 venv
+.venv
 pBsky.ini
 __pycache__
 .vscode
